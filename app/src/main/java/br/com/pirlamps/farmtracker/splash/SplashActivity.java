@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 
 import br.com.pirlamps.farmtracker.R;
-import br.com.pirlamps.farmtracker.main.MainActivity;
+import br.com.pirlamps.farmtracker.greeting.GreetingActivity;
 import me.wangyuwei.particleview.ParticleView;
 
 /**
@@ -32,7 +32,7 @@ public class SplashActivity extends Activity implements ParticleView.ParticleAni
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Intent i = new Intent(SplashActivity.this, MainActivity.class);
+        Intent i = new Intent(SplashActivity.this, GreetingActivity.class);
         startActivity(i);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();

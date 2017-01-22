@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#243E36</color>
 
     <color name="lightblue">#9ABCCE</color>
     <color name="lightGreen">#BAD9A2</color>
@@ -10,6 +10,7 @@
     <color name="grayGreen">#89937C</color>
     <color name="background">#C6D8B8</color>
     <color name="brown">#66462C</color>
+    <color name="white">#fff</color>
 
     <color name="lbYellow">#f2ed8c</color>
     <color name="lvBlue">#4fd6dd</color>

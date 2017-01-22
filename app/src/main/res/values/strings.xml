@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FarmTracker</string>
+    <string name="greeting_login_text">Entrar</string>
+    <string name="greeting_create_acc_text">Criar conta</string>
+    <string name="greeting_forgot_pass_text"><u>Esqueci a senha</u></string>
+    <string name="greeting_title_text">Bem vindo ao FarmTracker</string>
+    <string name="greeting_subtitle_text">A melhor ferramenta para o acompanhamento de suas produções</string>
+    <string name="greeting_email_hint_text">Email</string>
+    <string name="greeting_pass_hint_text">Senha</string>
 </resources>
