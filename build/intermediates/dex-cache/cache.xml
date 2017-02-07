@@ -2,175 +2,193 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/me.wangyuwei/ParticleView/1.0.4/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d8cef207fe3523818f332926c75686e1e9e373fa">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/me.wangyuwei-ParticleView-1.0.4_ef7b1aaca9fcbd1de8ce53408203818265747538.jar" />
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.wangyuwei-ParticleView-1.0.4_ef7b1aaca9fcbd1de8ce53408203818265747538/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.0_74ff6c15cddbd2b74d7a1cb502c157b21eba883c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_482cb5a2cb0f2424ccc1d754ef0d1f13a5c54640.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_50a25032c8978c32712f3157d0332c7cd83199b5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.0_9f04c50a90c3a658fb2215e7a0b1b406497d3f0e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.databinding-library-1.2.1_ad4f6984d90eb266cd0f99b87842cd47c704220b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-beta4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.0-beta4_1d3751adb7508777fc3e366fe158b6c91e63634e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_e95abd3ec87fb5dde2dd20dd5aadadeb2553c890.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_66a2b424a6ee234734f5fd650a3adf1138275879.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.0_aa710706ef260399a4ad21fd0c2316c2501a6fbc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_9948b516ee63d8c2bf5b79edc9ecbebf0808f467.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/usr/local/android-studio/gradle/m2repository/com/android/databinding/baseLibrary/2.2.3/baseLibrary-2.2.3.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/baseLibrary-2.2.3_c1fdfd3254ff32a7f83c0ad21381d0b267543ec6.jar" />
-    </item>
-    <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.databinding-adapters-1.2.1_1f83ae91e9556bbe49a03c8410604febcfc30ef2.jar" />
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-adapters-1.2.1_1f83ae91e9556bbe49a03c8410604febcfc30ef2/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/root-matheus/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0a9cb567dc008f570c28531720168f19148da965">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-beta4_ae40fea1bfbbe2c5224bfb8cf48dbfac2b818182.jar" />
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_74ff6c15cddbd2b74d7a1cb502c157b21eba883c/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_9948b516ee63d8c2bf5b79edc9ecbebf0808f467/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fc5ffec0564c26734be77b5064488770e466f350">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_47adb8ba5c635723a79e23644c815a46d2244544/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_35f9f0f29dc9df0fd24f48b3d0aec93f96327ce7.jar" />
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_35f9f0f29dc9df0fd24f48b3d0aec93f96327ce7/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_cc84e95aafe6d365fc77692ceef6d2bb0d47a4c0.jar" />
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_cc84e95aafe6d365fc77692ceef6d2bb0d47a4c0/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-library-1.2.1_ad4f6984d90eb266cd0f99b87842cd47c704220b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-beta4_ae40fea1bfbbe2c5224bfb8cf48dbfac2b818182/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.0_9f04c50a90c3a658fb2215e7a0b1b406497d3f0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/usr/local/android-studio/gradle/m2repository/com/android/databinding/baseLibrary/2.2.3/baseLibrary-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.3_c1fdfd3254ff32a7f83c0ad21381d0b267543ec6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_50a25032c8978c32712f3157d0332c7cd83199b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_482cb5a2cb0f2424ccc1d754ef0d1f13a5c54640/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3e9c37417307649000f0e01f22d0a97a6d30eb7">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fc105573fe4593053dd404222830679a7af756fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-beta4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support.constraint-constraint-layout-1.0.0-beta4_1d3751adb7508777fc3e366fe158b6c91e63634e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_66a2b424a6ee234734f5fd650a3adf1138275879/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_e95abd3ec87fb5dde2dd20dd5aadadeb2553c890/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_029714a009bab34ab300e56638af51a7959cbe61.jar" />
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_029714a009bab34ab300e56638af51a7959cbe61/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_aa710706ef260399a4ad21fd0c2316c2501a6fbc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_d0d50d5249d7130d94707ace666958a01f485439.jar" />
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_d0d50d5249d7130d94707ace666958a01f485439/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_e89cf59dbeb9dc17e5b0b9450154baa3b74229b1.jar" />
+        <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_e89cf59dbeb9dc17e5b0b9450154baa3b74229b1/classes.dex" />
     </item>
 
 </items>

@@ -14,4 +14,11 @@
 
     <color name="lbYellow">#f2ed8c</color>
     <color name="lvBlue">#4fd6dd</color>
+    <color name="darkRed">#cc5151</color>
+
+    <color name="textCultureCare">#870808</color>
+    <color name="textMechanical">#088708</color>
+    <color name="textPest">#120887</color>
+    <color name="textFertilizer">#878708</color>
+
 </resources>

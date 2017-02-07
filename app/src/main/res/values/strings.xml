@@ -7,4 +7,10 @@
     <string name="greeting_subtitle_text">A melhor ferramenta para o acompanhamento de suas produções</string>
     <string name="greeting_email_hint_text">Email</string>
     <string name="greeting_pass_hint_text">Senha</string>
+    <string name="culture_old_actions">Entradas Antigas</string>
+    <string name="culture_new_action">Nova Entrada</string>
+    <string name="action_mechanical">Operações mecânicas e manuais</string>
+    <string name="action_fertilizer">Fertilização e nutrição</string>
+    <string name="action_culture_care">Tratos culturais</string>
+    <string name="action_pest">Controle de pragas e doenças</string>
 </resources>
