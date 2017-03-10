@@ -95,7 +95,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/outleCultureCare"
+        android:id="@+id/outletCultureCare"
         android:background="@color/darkRed"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

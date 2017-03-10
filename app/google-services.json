@@ -1,0 +1,174 @@
+{
+  "project_info": {
+    "project_number": "116073083989",
+    "firebase_url": "https://pirlamps-94c83.firebaseio.com",
+    "project_id": "pirlamps-94c83",
+    "storage_bucket": "pirlamps-94c83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116073083989:android:1897d703412f4650",
+        "android_client_info": {
+          "package_name": "br.com.root_matheus.lovestory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116073083989-ugdophpsi607o63ppbcuehqlrdnv7ne5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0pwXndWZzCJ9Kg0g9hh08roC7wje6tK8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116073083989:android:5d430d418bd3e1de",
+        "android_client_info": {
+          "package_name": "br.com.pirlamps.foodroullet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116073083989-lufn5pilest3c9d5i01tv1dv330k7bkn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.pirlamps.foodroullet",
+            "certificate_hash": "b67b871553d8e9578dcef060d57e23ee3e5c623b"
+          }
+        },
+        {
+          "client_id": "116073083989-ugdophpsi607o63ppbcuehqlrdnv7ne5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0pwXndWZzCJ9Kg0g9hh08roC7wje6tK8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116073083989-ugdophpsi607o63ppbcuehqlrdnv7ne5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116073083989:android:ce9d03b0c05ea992",
+        "android_client_info": {
+          "package_name": "br.com.pirlamps.roulletgourmet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116073083989-64bbq1e5r2tjc3ecjfeqfdckq5v99ngf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.pirlamps.roulletgourmet",
+            "certificate_hash": "b67b871553d8e9578dcef060d57e23ee3e5c623b"
+          }
+        },
+        {
+          "client_id": "116073083989-ugdophpsi607o63ppbcuehqlrdnv7ne5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0pwXndWZzCJ9Kg0g9hh08roC7wje6tK8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116073083989-ugdophpsi607o63ppbcuehqlrdnv7ne5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116073083989:android:5f078c4094e447f0",
+        "android_client_info": {
+          "package_name": "br.com.pirlamps.farmtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116073083989-9jaq4vncm3eilbb9nfop514q6899nph3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.pirlamps.farmtracker",
+            "certificate_hash": "b67b871553d8e9578dcef060d57e23ee3e5c623b"
+          }
+        },
+        {
+          "client_id": "116073083989-ugdophpsi607o63ppbcuehqlrdnv7ne5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0pwXndWZzCJ9Kg0g9hh08roC7wje6tK8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116073083989-ugdophpsi607o63ppbcuehqlrdnv7ne5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

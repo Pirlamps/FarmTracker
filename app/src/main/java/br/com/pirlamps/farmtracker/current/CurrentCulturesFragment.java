@@ -1,12 +1,10 @@
 package br.com.pirlamps.farmtracker.current;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.view.menu.ExpandedMenuView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +14,7 @@ import br.com.pirlamps.farmtracker.R;
 import br.com.pirlamps.farmtracker.current.detail.CurrentCultureDetailFragment;
 import br.com.pirlamps.farmtracker.databinding.FragmentCurrentCulturesBinding;
 import br.com.pirlamps.farmtracker.main.MainActivity;
-import br.com.pirlamps.farmtracker.util.TesteAdapter;
+import br.com.pirlamps.farmtracker.foundation.util.TesteAdapter;
 
 /**
  * Created by root-matheus on 06/02/17.
