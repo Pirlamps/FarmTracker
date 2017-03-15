@@ -6,6 +6,11 @@
         <item name="colorPrimary">@color/brown</item>
         <item name="colorPrimaryDark">@color/lightGreen</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/background</item>
     </style>
 
 </resources>

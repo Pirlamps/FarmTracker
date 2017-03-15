@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="314080fa269812c0cfdd54067e99b9e2ef9f6428">
+        sha1="97da4065d3d20db39241119abb7fcb3ce2e5c8da">
         <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_47adb8ba5c635723a79e23644c815a46d2244544/classes.dex" />
     </item>
     <item
@@ -223,7 +223,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="940678fe19a024347cccb83bfc31b89169c3ddcb">
+        sha1="00d856d3f80f534a01a3fb071a67c369e4074871">
         <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fc105573fe4593053dd404222830679a7af756fa/classes.dex" />
     </item>
     <item

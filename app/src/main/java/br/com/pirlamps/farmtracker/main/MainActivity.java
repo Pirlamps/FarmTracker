@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hideFloatButton(){
-        binding.outletAddCultureButton.setVisibility(View.GONE);
+//        binding.outletAddCultureButton.setVisibility(View.GONE);
+    }
+
+    public void showFloatButton(){
+//        binding.outletAddCultureButton.setVisibility(View.VISIBLE);
     }
 }
