@@ -7,6 +7,8 @@ import android.os.PersistableBundle;
 
 import br.com.pirlamps.farmtracker.R;
 import br.com.pirlamps.farmtracker.greeting.GreetingActivity;
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 import me.wangyuwei.particleview.ParticleView;
 
 /**
@@ -18,6 +20,7 @@ public class SplashActivity extends Activity implements ParticleView.ParticleAni
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_splash);
         ParticleView pv = (ParticleView) findViewById(R.id.splash_animation);
         pv.startAnim();

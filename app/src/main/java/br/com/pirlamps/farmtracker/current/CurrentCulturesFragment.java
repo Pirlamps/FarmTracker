@@ -14,9 +14,13 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.UUID;
+
 import br.com.pirlamps.farmtracker.R;
 import br.com.pirlamps.farmtracker.current.detail.CurrentCultureDetailFragment;
 import br.com.pirlamps.farmtracker.databinding.FragmentCurrentCulturesBinding;
+import br.com.pirlamps.farmtracker.foundation.model.CultureVO;
+import br.com.pirlamps.farmtracker.foundation.util.JSONStringDate;
 import br.com.pirlamps.farmtracker.main.MainActivity;
 import br.com.pirlamps.farmtracker.foundation.util.TesteAdapter;
 
@@ -30,10 +34,13 @@ public class CurrentCulturesFragment extends Fragment {
 
     private TesteAdapter adapter;
     FragmentCurrentCulturesBinding binding;
+    private CurrentCulturePresenter presenter;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         adapter = new TesteAdapter(getContext());
+        presenter = new CurrentCulturePresenter();
     }
 
     @Nullable
@@ -86,7 +93,14 @@ public class CurrentCulturesFragment extends Fragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
-                //save info where you want it
+
+                String cultureId = UUID.randomUUID().toString();
+                String name = cultureName.getText().toString();
+                String location = cultureLocation.getText().toString();
+                String date = JSONStringDate.dateNow();
+                Double budget = 0.0;
+                CultureVO culture = new CultureVO(cultureId,name,location,date,budget);
+                presenter.createNewCulture(culture);
                 Toast.makeText(getContext(), "Nova cultura: "+cultureName.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
