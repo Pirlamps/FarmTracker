@@ -18,9 +18,8 @@ public class ActionVO {
     private String detail;
     private String date;
 
-    public ActionVO(TypeEnum type, String name, String cost, String detail, String date) {
+    public ActionVO(TypeEnum type, String cost, String detail, String date) {
         this.type = type;
-        this.name = name;
         this.cost = cost;
         this.detail = detail;
         this.date = date;

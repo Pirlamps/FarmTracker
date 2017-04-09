@@ -57,10 +57,9 @@ public class ActionFormFragment extends Fragment implements ActionFormContract.V
 
     private ActionVO getAction(){
 
-        String name = binding.outletActionName.getText().toString();
         String cost = binding.outletActionCost.getText().toString();
         String detail = binding.outletActionDetail.getText().toString();
-        ActionVO action = new ActionVO(this.type,name,cost,detail, JSONStringDate.dateNow());
+        ActionVO action = new ActionVO(this.type,cost,detail, JSONStringDate.dateNow());
         return action;
     }
 

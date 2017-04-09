@@ -6,34 +6,7 @@
     android:background="@color/background">
 
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="60dp">
 
-        <TextView
-            android:text="Tipo"
-            android:textStyle="bold"
-            android:gravity="center|right"
-            android:paddingRight="20dp"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:id="@+id/textView21"
-            android:background="@color/lightGreen"
-            android:layout_weight="1" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:inputType="textPersonName"
-            android:text=""
-            android:singleLine="true"
-            android:maxLength="25"
-            android:ellipsize="end"
-            android:ems="10"
-            android:id="@+id/outletActionType"
-            android:layout_weight="1" />
-    </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -55,6 +28,7 @@
             android:layout_height="match_parent"
             android:inputType="textPersonName"
             android:text=""
+            android:hint="Adubação"
             android:singleLine="true"
             android:maxLength="25"
             android:ellipsize="end"
@@ -83,6 +57,7 @@
             android:layout_height="match_parent"
             android:inputType="textPersonName"
             android:text=""
+            android:hint="900"
             android:singleLine="true"
             android:maxLength="25"
             android:ellipsize="end"
@@ -109,11 +84,9 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:inputType="textPersonName"
+            android:inputType="textMultiLine"
             android:text=""
-            android:singleLine="true"
-            android:maxLength="25"
-            android:ellipsize="end"
+            android:hint="Foi feito uma adubação com\n um composto..."
             android:ems="10"
             android:id="@+id/outletActionDetail"
             android:layout_weight="1" />

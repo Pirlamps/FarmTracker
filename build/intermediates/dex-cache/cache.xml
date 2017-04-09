@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="27592ea2e0eb30b64a02dafed2c59988e07c70b2">
+        sha1="d6da5ba4ad8333972313a153a7ba04a7ce439307">
         <dex dex="/home/root-matheus/AndroidStudioProjects/FarmTracker/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_47adb8ba5c635723a79e23644c815a46d2244544/classes.dex" />
     </item>
     <item
