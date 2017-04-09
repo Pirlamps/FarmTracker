@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+    <data>
+        <variable
+            name="culture"
+            type="br.com.pirlamps.farmtracker.foundation.model.CultureVO"/>
+    </data>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,7 +29,7 @@
             app:layout_constraintLeft_toLeftOf="parent" />
 
         <TextView
-            android:text="Tomate"
+            android:text="@{culture.name}"
             android:textSize="20sp"
             android:textColor="@color/colorAccent"
             android:layout_width="wrap_content"
@@ -36,7 +41,7 @@
             app:layout_constraintLeft_toRightOf="@+id/imageView2" />
 
         <TextView
-            android:text="Talhão: 2"
+            android:text="@{culture.location}"
             android:textSize="20sp"
             android:textColor="@color/colorAccent"
             android:layout_width="wrap_content"

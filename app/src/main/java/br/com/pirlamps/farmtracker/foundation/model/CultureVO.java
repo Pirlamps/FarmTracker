@@ -1,10 +1,12 @@
 package br.com.pirlamps.farmtracker.foundation.model;
 
+import java.io.Serializable;
+
 /**
  * Created by root-matheus on 16/03/17.
  */
 
-public class CultureVO {
+public class CultureVO implements Serializable{
 
     private String cultureId;
     private String name;

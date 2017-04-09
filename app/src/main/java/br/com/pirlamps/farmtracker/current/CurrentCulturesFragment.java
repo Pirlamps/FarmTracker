@@ -14,11 +14,23 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
+import br.com.pirlamps.farmtracker.BR;
 import br.com.pirlamps.farmtracker.R;
 import br.com.pirlamps.farmtracker.current.detail.CurrentCultureDetailFragment;
 import br.com.pirlamps.farmtracker.databinding.FragmentCurrentCulturesBinding;
+import br.com.pirlamps.farmtracker.foundation.joat.JoatAdapter;
+import br.com.pirlamps.farmtracker.foundation.joat.JoatObject;
 import br.com.pirlamps.farmtracker.foundation.model.CultureVO;
 import br.com.pirlamps.farmtracker.foundation.util.JSONStringDate;
 import br.com.pirlamps.farmtracker.main.MainActivity;
@@ -32,27 +44,66 @@ import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
 public class CurrentCulturesFragment extends Fragment {
 
-    private TesteAdapter adapter;
+    private JoatAdapter adapter;
     FragmentCurrentCulturesBinding binding;
     private CurrentCulturePresenter presenter;
-
+    private DatabaseReference ref;
+    List<CultureVO> cultures;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        adapter = new TesteAdapter(getContext());
+        adapter = new JoatAdapter(getContext());
         presenter = new CurrentCulturePresenter();
+        cultures = new ArrayList<>();
     }
+
+    //TODO Remover o listener
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentCurrentCulturesBinding.inflate(inflater,container,false);
-        adapter.setData(5);
-        binding.outletCurrentCultureList.setAdapter(adapter);
+        getCulturesData();
+
+
         this.prepareButtons();
 
 
         return binding.getRoot();
+    }
+
+    public void getCulturesData(){
+
+        if(FirebaseAuth.getInstance().getCurrentUser() != null) {
+            String userUUID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            ref = FirebaseDatabase.getInstance().getReference()
+                    .child("farmTracker")
+                    .child("cultures")
+                    .child(userUUID);
+
+            ref.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    cultures.clear();
+                    for (DataSnapshot child: dataSnapshot.getChildren()) {
+                        cultures.add(child.getValue(CultureVO.class));
+                    }
+
+                    List<JoatObject> adapterList = new ArrayList<>();
+                    for (CultureVO culture : cultures) {
+                        adapterList.add(new JoatObject(R.layout.row_current_culture, BR.culture,culture,null));
+                    }
+                    adapter.setData(adapterList);
+                    binding.outletCurrentCultureList.setAdapter(adapter);
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+        }
+
     }
 
     private void prepareButtons(){
@@ -60,10 +111,10 @@ public class CurrentCulturesFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-
+                CultureVO current = ((CultureVO) ((JoatObject) adapter.getItem(position)).getBindingObject());
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.mainFragment, new CurrentCultureDetailFragment(), "CurrentCultureDetail");
+                ft.replace(R.id.mainFragment, CurrentCultureDetailFragment.newInstance(current), "CurrentCultureDetail");
                 ft.addToBackStack("CurrentCultureDetail");
                 ft.commit();
             }
