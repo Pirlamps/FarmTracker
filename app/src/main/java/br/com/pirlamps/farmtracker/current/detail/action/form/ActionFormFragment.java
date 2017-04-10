@@ -9,9 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 import br.com.pirlamps.farmtracker.databinding.FragmentActionFormBinding;
 import br.com.pirlamps.farmtracker.foundation.model.ActionVO;
+import br.com.pirlamps.farmtracker.foundation.model.CultureVO;
 import br.com.pirlamps.farmtracker.foundation.util.JSONStringDate;
 
 /**
@@ -23,11 +25,15 @@ public class ActionFormFragment extends Fragment implements ActionFormContract.V
     FragmentActionFormBinding binding;
     ActionFormPresenter presenter;
     private ActionVO.TypeEnum type;
+    private CultureVO current;
+    private static final String CULTURE_TAG = "culture_tag";
+    private static final String TYPE_TAG = "type_tag";
 
-    public static ActionFormFragment newInstance(ActionVO.TypeEnum type) {
+    public static ActionFormFragment newInstance(CultureVO current, ActionVO.TypeEnum type) {
 
         Bundle args = new Bundle();
-        args.putSerializable("type", type);
+        args.putSerializable(TYPE_TAG, type);
+        args.putSerializable(CULTURE_TAG,current);
         ActionFormFragment fragment = new ActionFormFragment();
         fragment.setArguments(args);
         return fragment;
@@ -35,7 +41,8 @@ public class ActionFormFragment extends Fragment implements ActionFormContract.V
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.type = (ActionVO.TypeEnum) getArguments().getSerializable("type");
+        this.type = (ActionVO.TypeEnum) getArguments().getSerializable(TYPE_TAG);
+        this.current = (CultureVO) getArguments().getSerializable(CULTURE_TAG);
         presenter = new ActionFormPresenter(this);
 
     }
@@ -48,7 +55,7 @@ public class ActionFormFragment extends Fragment implements ActionFormContract.V
         binding.outletSaveActionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.sendAction(getAction());
+                presenter.sendAction(current,getAction());
             }
         });
 
@@ -57,9 +64,11 @@ public class ActionFormFragment extends Fragment implements ActionFormContract.V
 
     private ActionVO getAction(){
 
+        String name = binding.outletActionName.getText().toString();
         String cost = binding.outletActionCost.getText().toString();
         String detail = binding.outletActionDetail.getText().toString();
-        ActionVO action = new ActionVO(this.type,cost,detail, JSONStringDate.dateNow());
+        ActionVO action = new ActionVO(this.type,name,cost,detail, JSONStringDate.dateNow());
+        action.setActionId(UUID.randomUUID().toString());
         return action;
     }
 
@@ -67,11 +76,12 @@ public class ActionFormFragment extends Fragment implements ActionFormContract.V
 
     @Override
     public void onSuccess() {
-        Toast.makeText(getContext(), "yay :D", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "Nova entrada enviada com sucesso!", Toast.LENGTH_SHORT).show();
+        //TODO voltar a tela
     }
 
     @Override
     public void onError() {
-        Toast.makeText(getContext(), "sem yay D:", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "Erro ao enviar nova entrada.", Toast.LENGTH_SHORT).show();
     }
 }

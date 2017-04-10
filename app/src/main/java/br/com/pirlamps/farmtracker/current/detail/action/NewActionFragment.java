@@ -13,6 +13,7 @@ import br.com.pirlamps.farmtracker.R;
 import br.com.pirlamps.farmtracker.current.detail.action.form.ActionFormFragment;
 import br.com.pirlamps.farmtracker.databinding.FragmentNewActionBinding;
 import br.com.pirlamps.farmtracker.foundation.model.ActionVO;
+import br.com.pirlamps.farmtracker.foundation.model.CultureVO;
 
 /**
  * Created by root-matheus on 06/02/17.
@@ -21,6 +22,24 @@ import br.com.pirlamps.farmtracker.foundation.model.ActionVO;
 public class NewActionFragment extends Fragment{
 
     FragmentNewActionBinding binding;
+    private CultureVO current;
+    private static final String CULTURE_TAG = "culture_tag";
+
+    public static NewActionFragment newInstance(CultureVO current) {
+
+        Bundle args = new Bundle();
+        args.putSerializable(CULTURE_TAG,current);
+        NewActionFragment fragment = new NewActionFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.current = (CultureVO) getArguments().getSerializable(CULTURE_TAG);
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -64,7 +83,7 @@ public class NewActionFragment extends Fragment{
     private void nextFragment(ActionVO.TypeEnum actionType){
         FragmentManager fm = getActivity().getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.mainFragment, ActionFormFragment.newInstance(actionType), "actionForm");
+        ft.replace(R.id.mainFragment, ActionFormFragment.newInstance(current,actionType), "actionForm");
         ft.addToBackStack("actionForm");
         ft.commit();
     }

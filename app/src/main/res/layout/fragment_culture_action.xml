@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="cultureAction"
+            type="br.com.pirlamps.farmtracker.foundation.model.ActionVO"/>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:text="Nome"
+                android:textStyle="bold"
+                android:gravity="center|right"
+                android:paddingRight="20dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView22"
+                android:background="@color/lightGreen"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="@{cultureAction.name}"
+                android:singleLine="true"
+                android:maxLength="25"
+                android:ellipsize="end"
+                android:ems="10"
+                android:id="@+id/outletActionName"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:text="Custo"
+                android:textStyle="bold"
+                android:gravity="center|right"
+                android:paddingRight="20dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView23"
+                android:background="@color/lightGreen"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="@{cultureAction.cost}"
+                android:singleLine="true"
+                android:maxLength="25"
+                android:ellipsize="end"
+                android:ems="10"
+                android:id="@+id/outletActionCost"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:text="Detalhes"
+                android:textStyle="bold"
+                android:gravity="center|right"
+                android:paddingRight="20dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView24"
+                android:background="@color/lightGreen"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:text="@{cultureAction.detail}"
+                android:ems="10"
+                android:id="@+id/outletActionDetail"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

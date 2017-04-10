@@ -1,31 +1,42 @@
 package br.com.pirlamps.farmtracker.foundation.model;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
  * Created by root-matheus on 09/03/17.
  */
 
-public class ActionVO {
+public class ActionVO implements Serializable {
 
     public enum TypeEnum{
         MECANICOS,NUTRICAO,TRATOS,CONROLE_DOENCAS;
     }
 
+    private String actionId;
     private TypeEnum type;
     private String name;
     private String cost;
     private String detail;
     private String date;
 
-    public ActionVO(TypeEnum type, String cost, String detail, String date) {
+    public ActionVO(TypeEnum type, String name, String cost, String detail, String date) {
         this.type = type;
+        this.name = name;
         this.cost = cost;
         this.detail = detail;
         this.date = date;
     }
 
     public ActionVO() {
+    }
+
+    public String getActionId() {
+        return actionId;
+    }
+
+    public void setActionId(String actionId) {
+        this.actionId = actionId;
     }
 
     public TypeEnum getType() {
